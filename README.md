@@ -20,4 +20,10 @@
 - start the service by executing ```sudo systemctl start cfdnsupdater```
 
 
-### Enjoy your CloudFlare Dynamic DNS
+### Enjoy your CloudFlare Dynamic DNS.
+
+
+
+
+#### Note to self
+This script and/or service was created because the original general DynDNS program is now lost (not to mention the licensing issues) and as I'm currently using only CF services, this turns out to all that I need (and probably will ever need).
