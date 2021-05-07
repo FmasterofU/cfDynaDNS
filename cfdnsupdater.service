@@ -1,0 +1,14 @@
+[Unit]
+Description=CF DNS updater service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+# Restarts the service (runs the script again) every 10 minutes (600 seconds)
+RestartSec=600
+ExecStart=/home/ubuntu/cfDynaDNS/cfdnsupdater.sh
+
+[Install]
+WantedBy=multi-user.target
