@@ -8,7 +8,9 @@ Type=simple
 Restart=always
 # Restarts the service (runs the script again) every 10 minutes (600 seconds)
 RestartSec=600
-ExecStart=/home/ubuntu/cfDynaDNS/cfdnsupdater.sh
+# Set the same user in which home directory your .cf directory is located, default is root
+User=root
+ExecStart=~/cfDynaDNS/cfdnsupdater.sh
 
 [Install]
 WantedBy=multi-user.target

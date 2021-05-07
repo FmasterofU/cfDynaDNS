@@ -4,11 +4,11 @@
 	This program updates a CloudFlare DNS record with the current IP addres of the host. It should be only distributed along with its license file.
 COMMENT
 
-ZONE=$(cat /home/ubuntu/.cf/igorsikuljak.rs/zone)
-DNS_RECORD=$(cat /home/ubuntu/.cf/igorsikuljak.rs/dns_record)
-USERNAME=$(cat /home/ubuntu/.cf/igorsikuljak.rs/user_mail)
-API_KEY=$(cat /home/ubuntu/.cf/igorsikuljak.rs/global_key)
-DNS_NAME='igorsikuljak.rs'
+ZONE=$(cat ~/.cf/igorsikuljak.rs/zone)
+DNS_RECORD=$(cat ~/.cf/igorsikuljak.rs/dns_record)
+USERNAME=$(cat ~/.cf/igorsikuljak.rs/user_mail)
+API_KEY=$(cat ~/.cf/igorsikuljak.rs/global_key)
+DNS_NAME=$(cat ~/.cf/igorsikuljak.rs/domain_name)
 DNS_TYPE='A'
 DNS_TTL='120'
 CF_PROXY='false'
