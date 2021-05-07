@@ -1,4 +1,4 @@
-# cfDynaDNS
+# cfDynaDNS - Solve your dynamic public IP problems
 ## A Service for automatic updating of CloudFlare's DNS record with the current Host's IP address.
 
 
