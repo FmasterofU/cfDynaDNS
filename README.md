@@ -4,8 +4,23 @@
 
 ### Configuration for the script
 
+Create a file/folder structure like this:
+```
+user's home directory
+|
+├── .cf
+│   ├── igorsikuljak.rs
+│   |   ├── dns_record
+│   |   ├── domain_name
+│   |   ├── global_key
+│   |   ├── user_mail
+│   |   └── zone
+|   ├── *other dns name*
+|   └── ...
+|
+```
 - create a `.cf` folder in your (ROOT user is advised) home directory, and then a `*domain name*` subdirectory
-- id the domain name's directory create files with names `zone` `dns_record`  `global_key` `user_mail` and `domain_name`; each containing only its corresponding value (CF Zone id, CF DNS record id,  global CF API key - or a specific API key, your CF username, and the domain name)
+- in the domain name's directory create files with names `zone`, `dns_record`,  `global_key`, `user_mail` and `domain_name`; each containing only its corresponding value (CF Zone id, CF DNS record id,  global CF API key - or a specific API key, your CF username, and the domain name)
 - Manualy change the static TTL value (120 seconds) or CF Proxy status (default: disabled) for your needs
 - change permissions for the file (to be executable) by executing `sudo chmod a+xcfdnsupdater.sh`
 
