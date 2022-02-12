@@ -10,7 +10,7 @@ Restart=always
 RestartSec=600
 # Set the same user in which home directory your .cf directory is located, default is root
 User=root
-ExecStart=~/cfDynaDNS/cfdnsupdater.sh
+ExecStart=/root/cfDynaDNS/cfdnsupdater.sh
 
 [Install]
 WantedBy=multi-user.target
